@@ -1,0 +1,82 @@
+:root
+{
+    --time-duration:9s;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(148, 219, 41);
+}
+
+h3
+{
+    margin:0px;
+}
+
+/* Styling rod-1 */
+#rod1 {
+	position: absolute;
+	top: 0%;
+	background-color: red;
+    width: 25vw;
+    box-sizing: border-box;
+    border-radius: 20px;
+    height: 5vh;
+    padding:5px;
+    text-align: center;
+    border: 4px solid black;
+}
+
+/* Styling rod-2 */
+#rod2 {
+	position: absolute;
+	bottom: 0%;
+    background-color: yellow;
+    border-radius: 20px;
+    width: 25vw;
+    box-sizing: border-box;
+    height: 5vh;
+    padding: 5px;
+    text-align: center;
+    border: 4px solid black;
+}
+
+/* Styling ball */
+#ball {
+	height: 50px;
+    width: 50px;
+    position:absolute;
+    border-radius: 50%;
+    background-image:radial-gradient(rgb(131, 26, 180) 0%,black 221%);
+    box-sizing: border-box;
+    border: 4px solid black;
+    /* box-shadow: 0px 0px 9px 6px rgb(131, 26, 180); */
+}
+
+/* Giving fonts to the contents of rod-1 and rod-2 */
+span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.animate-top-right
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(-2000px);
+}
+.animate-bottom-right
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(2000px) translateY(2000px);
+}
+.animate-top-left
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(-2000px);
+}
+.animate-bottom-left
+{
+    transition:transform linear var(--time-duration);
+    transform: translateX(-2000px) translateY(2000px);
+}
+
